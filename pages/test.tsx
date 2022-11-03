@@ -1,26 +1,29 @@
-// import styled from '@emotion/react'
-// const StyledDivHomeWrapper = styled.div``
-
+import React, {FC} from 'react';
 import styled from "styled-components";
 import LayoutWithNavBar from "../src/Components/LayoutWithNavBar/LayuoutWitnNavBar";
+import {StyledAppWrapper} from "./index";
 
-export const StyledAppWrapper = styled.div`
+
+interface IProps {
+}
+
+const StyledTest:FC<IProps>  = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  width: 100%;
+  height: 100vh;
+  border: 5px solid #000;
 `
 
-const Home = () => {
+const Test = () => {
     return (
-
         <LayoutWithNavBar>
             <StyledAppWrapper>
-                <h1>Hello Next!</h1>
+                <h1>TEST</h1>
             </StyledAppWrapper>
         </LayoutWithNavBar>
+    );
+};
 
-    )
-
-}
-export default Home
+export default Test;
